@@ -30,7 +30,7 @@ export default class Navbar extends React.Component {
                     xl:hover:opacity-100 xl:hover:border-${planet.name}`}
                   >
                     <span className="uppercase font-bold tracking-widest text-sm
-                    md:text-xs"><span id="circle-menu" className={`w-4 h-4 rounded-full bg-${planet.name}-menu inline-block mr-4 md:hidden`}></span>{planet.name}</span>
+                    md:text-xs"><span className={`w-4 h-4 rounded-full bg-${planet.name}-menu inline-block mr-4 md:hidden`}></span>{planet.name}</span>
                     <img
                       src={process.env.PUBLIC_URL + "/img/icon-chevron.svg"}
                       alt="Right arrow"
