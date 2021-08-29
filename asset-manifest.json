@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/planets-fact-site/static/css/main.34954410.chunk.css",
-    "main.js": "/planets-fact-site/static/js/main.45b7131d.chunk.js",
-    "main.js.map": "/planets-fact-site/static/js/main.45b7131d.chunk.js.map",
+    "main.css": "/planets-fact-site/static/css/main.87b82db0.chunk.css",
+    "main.js": "/planets-fact-site/static/js/main.02276c22.chunk.js",
+    "main.js.map": "/planets-fact-site/static/js/main.02276c22.chunk.js.map",
     "runtime-main.js": "/planets-fact-site/static/js/runtime-main.441e07cf.js",
     "runtime-main.js.map": "/planets-fact-site/static/js/runtime-main.441e07cf.js.map",
     "static/js/2.ca4cf5cc.chunk.js": "/planets-fact-site/static/js/2.ca4cf5cc.chunk.js",
     "static/js/2.ca4cf5cc.chunk.js.map": "/planets-fact-site/static/js/2.ca4cf5cc.chunk.js.map",
     "index.html": "/planets-fact-site/index.html",
-    "static/css/main.34954410.chunk.css.map": "/planets-fact-site/static/css/main.34954410.chunk.css.map",
+    "static/css/main.87b82db0.chunk.css.map": "/planets-fact-site/static/css/main.87b82db0.chunk.css.map",
     "static/js/2.ca4cf5cc.chunk.js.LICENSE.txt": "/planets-fact-site/static/js/2.ca4cf5cc.chunk.js.LICENSE.txt",
     "static/media/index.css": "/planets-fact-site/static/media/background-stars.f6233a6a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.441e07cf.js",
     "static/js/2.ca4cf5cc.chunk.js",
-    "static/css/main.34954410.chunk.css",
-    "static/js/main.45b7131d.chunk.js"
+    "static/css/main.87b82db0.chunk.css",
+    "static/js/main.02276c22.chunk.js"
   ]
 }
