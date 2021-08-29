@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/planets-fact-site-using-reactjs-tailwindcss-FPZK-1bCH)
+- Live Site URL: [Live site](https://juancfs.github.io/planets-fact-site/)
 
 ## My process
 
