@@ -10,7 +10,7 @@ module.exports = {
       "xl:hover:border-mercury", "xl:hover:border-venus", "xl:hover:border-earth", "xl:hover:border-mars", "xl:hover:border-jupiter", "xl:hover:border-saturn", "xl:hover:border-uranus", "xl:hover:border-neptune",
       "w-36", "w-40", "w-44", "w-48",
       "md:w-52", "md:w-56", "md:w-60", "md:w-64",
-      "xl:w-56", "xl:w-60", "xl:w-64", "xl:w-68"]
+      "xl:w-72", "xl:w-96", "xl:w-100", "xl:w-104"]
     }
   },
   darkMode: false, // or 'media' or 'class'
@@ -54,8 +54,12 @@ module.exports = {
       letterSpacing: {
         "widest": ".175em"
       },
+      width: {
+        "100": "27rem",
+        "104": "29.5rem",
+      },
       borderTop: ["hover"],
-      borderColor: ["hover"]
+      borderColor: ["hover"],
     },
   },
   variants: {

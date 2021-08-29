@@ -26,7 +26,7 @@
     "imageSize": {
       "default": "36",
       "medium": "52",
-      "large": "56"
+      "large": "72"
     }
   },
   {
@@ -56,7 +56,7 @@
     "imageSize": {
       "default": "40",
       "medium": "56",
-      "large": "60"
+      "large": "96"
     }
   },
   {
@@ -86,7 +86,7 @@
     "imageSize": {
       "default": "40",
       "medium": "56",
-      "large": "60"
+      "large": "96"
     }
   },
   {
@@ -116,7 +116,7 @@
     "imageSize": {
       "default": "36",
       "medium": "52",
-      "large": "56"
+      "large": "72"
     }
   },
   {
@@ -146,7 +146,7 @@
     "imageSize": {
       "default": "48",
       "medium": "64",
-      "large": "68"
+      "large": "104"
     }
   },
   {
@@ -176,7 +176,7 @@
     "imageSize": {
       "default": "48",
       "medium": "64",
-      "large": "68"
+      "large": "104"
     }
   },
   {
@@ -206,7 +206,7 @@
     "imageSize": {
       "default": "44",
       "medium": "60",
-      "large": "64"
+      "large": "100"
     }
   },
   {
@@ -236,7 +236,7 @@
     "imageSize": {
       "default": "44",
       "medium": "60",
-      "large": "64"
+      "large": "100"
     }
   }
 ]

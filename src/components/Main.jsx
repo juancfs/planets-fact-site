@@ -13,7 +13,7 @@ export default class Main extends React.Component {
             <button
               className={`uppercase text-2xs tracking-widest py-5 opacity-80 ${(item === this.props.currentContent) ? `border-b-4 border-${this.props.currentPlanet} opacity-100 font-bold rounded-none`: undefined}
               md:text-left md:border-b-0 md:w-full md:py-4 md:px-4 md:font-bold md:bg-${(item === this.props.currentContent) ? this.props.currentPlanet: undefined}
-              ${(item !== this.props.currentContent) ? "xl:hover:bg-gray-space xl:hover:opacity-100 xl:transition-all xl:duration-300" : undefined}`}
+              xl:text-xs ${(item !== this.props.currentContent) ? "xl:hover:bg-gray-space xl:hover:opacity-100 xl:transition-all xl:duration-300" : undefined}`}
               onClick={() => this.props.onChangeContent(item)}
             >
               <span className="hidden text-white md:inline-block md:opacity-70 mr-3">{"0" + (index + 1)}</span>
@@ -38,7 +38,7 @@ export default class Main extends React.Component {
         {
           <div className="relative px-6 my-20
           md:col-span-2 md:row-start-1 md:row-end-2
-          xl:row-end-3 xl:col-span-1">
+          xl:px-0 xl:my-auto xl:row-end-3 xl:col-span-1">
           <img
             src={planetImageSrc}
             alt={`${this.props.currentPlanet}'s illustration`}
@@ -51,7 +51,7 @@ export default class Main extends React.Component {
               src={process.env.PUBLIC_URL + planetsData[this.props.currentPlanetIndex]["images"]["geology"]}
               alt={`${this.props.currentPlanet}'s surface`}
               className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 w-24
-              xl:-bottom-0 xl:top-40 xl:w-32"
+              xl:-bottom-12 xl:w-32"
             />
           ) : undefined}
         </div>
@@ -64,10 +64,11 @@ export default class Main extends React.Component {
   getPlanetContent = () => {
     return (
       <div className="text-center px-6
-      md:row-start-2 md:text-left
+      md:px-0 md:row-start-2 md:text-left
       xl:row-start-1 xl:row-end-2 xl xl:px-0">
         <h2 className="font-antonio text-4xl uppercase mb-6
-        md:text-5xl">{this.props.currentPlanet}</h2>
+        md:text-5xl
+        xl:text-7xl">{this.props.currentPlanet}</h2>
         <p className="font-spartan text-xs leading-6
         xl:text-sm">
           {
@@ -76,7 +77,8 @@ export default class Main extends React.Component {
             ]["content"]
           }
         </p>
-        <p className="my-8 text-sm font-spartan">
+        <p className="my-8 text-xs font-spartan
+        xl:text-sm">
           <span className="opacity-50">Source: </span> 
           <a
             href={
@@ -99,7 +101,8 @@ export default class Main extends React.Component {
   getPlanetStats = () => {
     return(
       <ul className="px-6
-      md:flex md:justify-between md:px-0">
+      md:flex md:justify-between md:px-0
+      xl:mt-12">
       {[
         { title: "rotation time", identifier: "rotation" },
         { title: "revolution time", identifier: "revolution" },
@@ -108,11 +111,13 @@ export default class Main extends React.Component {
       ].map((item) => {
         return (
           <li key={item.title} className={`flex justify-between items-center mt-4 py-2 px-5 border-1.5 border-gray-space border-opacity-40
-          md:flex-col md:pl-4 md:pr-12`}>
+          md:flex-col md:pl-4 md:pr-12 md:items-start`}>
             <span className="font-spartan uppercase text-3xs opacity-60
-            md:mb-2">{item.title}</span>
+            md:mb-2
+            xl:text-2xs">{item.title}</span>
             <span className="font-antonio text-xl uppercase
-            md:text-2xl">
+            md:text-2xl
+            xl:text-4xl">
               {planetsData[this.props.currentPlanetIndex][item.identifier]}
             </span>
           </li>
@@ -123,9 +128,9 @@ export default class Main extends React.Component {
   };
   render() {
     return (
-      <main className="md:px-12 xl:px-36 xl:mt-20">
-        <div className="md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-16
-        xl:gap-x-36">
+      <main className="md:px-12 xl:px-36 xl:mt-24">
+        <div className="md:grid md:grid-cols-2 md:gap-x-16
+        xl:grid-rows-2 xl:gap-x-24">
         {this.contentMenu()}
         {this.getPlanetImages()}
         {this.getPlanetContent()}
